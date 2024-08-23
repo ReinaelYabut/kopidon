@@ -332,6 +332,10 @@ background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 
   }
 }
 
+.descrip {
+  margin-bottom: 0;
+  font-size: 14px;
+}
 
 /* footer */
 body {

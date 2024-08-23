@@ -473,3 +473,8 @@ html::-webkit-scrollbar {
     background: #8d5032;
     color: #dcd2cf;
 }
+
+.descrip {
+  margin-bottom: 0;
+  font-size: 14px;
+}
