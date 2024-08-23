@@ -1,57 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
 body {
   overflow-x: hidden;
   min-height: 100dvh;
   margin: 0;
   padding: 0;
+  width: 100vw !important; /* Full viewport width */
+
   background: rgb(240,230,214);
 background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 100%);
 }
-/* navbar */
-
-#navbar {
-  background-color: #22130f;
-  font-family: 'Roboto', sans-serif;
-}
-
-#logo img {
-  border-radius: 10px;
-  width: 160px;
-  margin-left: 40px;
-}
-
-.navbar-nav {
-  margin-left: 50px;
-}
-
-.nav-item .nav-link {
-  color: #bcb2ab;
-  margin-left: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  transition: 0.5s;
-}
-
-.nav-item .nav-link:hover {
-  background: #bcb2ab;
-  border-radius: 5px;
-  color: black;
-}
-
-#navbar form button {
-  background: #bcb2ab;
-  color: black;
-  border: 1px solid white;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-#navbar form button:hover {
-  background: #22130f;
-  color: white;
-}
 
 
 /* navbar */
+
+@media (max-width: 600px) {
+
+  .main-with-aside {
+    margin: 0 !important;
+  }
+  #caffedonnlogo {
+      transform: scale(0.8);
+      margin-bottom: 0 !important;
+  }
+
+  #nav-ul {
+      transform: scale(0.6);
+      display: grid !important;
+      grid-template-columns: repeat(5, 1fr) !important;
+      margin-left: -4rem !important;
+      padding: 0 !important;
+      background: #2f1e18;
+      width: 100vw; /* Full viewport width */
+      height: 80px; /* Set height of navbar */
+      width: 100vw !important; /* Full viewport width */
+  }
+}
+#caffedonnlogo {
+  height: 4.5rem;
+  width: 12rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  animation: fade-down 0.5s forwards;
+}
+
+.navlinks {
+  text-decoration: none;
+  color: rgb(176, 149, 149);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 1.5rem;
+}
+
+.navlinks:hover {
+  animation: bigger 0.5s forwards !important;
+  text-decoration: none;
+  color: rgb(233, 191, 191);
+
+}
+
+.bgcolor {
+  background-color: #2f1e18;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    font-size: 3px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+      font-size: 16px;
+  }
+}
+
+@keyframes bigger {
+  0% {
+    font-size: 16px;
+  }
+  100% {
+    font-size: 19px;
+  }
+}
+
+#nav-ul {
+  list-style-type: none;
+  display: flex !important; /* Display list items horizontally */
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  background: #2f1e18;
+}
+
+
+
+/* navbar */
+.main-with-aside {
+  margin: 0 5rem;
+}
 
 @media (min-width: 1024px) {
   body {
@@ -170,10 +228,9 @@ background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 
   min-width: 20rem;
   max-width: 20rem;
   max-height: 28rem;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   animation: fade-up .5s forwards;
 }
-
 
 .menu-details {
   text-align: left;
@@ -256,12 +313,12 @@ background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 
 @keyframes fade-down {
   0% {
     opacity: 0;
-    transform: translateY(-10px) scale(0.95);
+    transform: translateY(-20px) scale(0.95);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(10px) scale(1);
+    transform: translateY(0) scale(1);
   }
 }
 

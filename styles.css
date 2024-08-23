@@ -12,9 +12,7 @@
     font-style: normal;
 }
 
-.all-content {
-    background: #bcb2ab;
-}
+
 
 html::-webkit-scrollbar-track {
     background: transparent;
@@ -43,8 +41,11 @@ html::-webkit-scrollbar {
         transform: scale(0.6);
         display: grid !important;
         grid-template-columns: repeat(5, 1fr) !important;
-        margin-left: -7rem !important;
+        margin-left: -4rem !important;
         padding: 0 !important;
+        background: #2f1e18;
+        width: 100vw; /* Full viewport width */
+        height: 80px; /* Set height of navbar */
     }
 }
 #caffedonnlogo {
@@ -53,15 +54,51 @@ html::-webkit-scrollbar {
     margin-left: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-radius: 2rem;
+    animation: fade-down 0.5s forwards;
 }
 
 .navlinks {
     text-decoration: none;
-    color: black;
+    color: rgb(176, 149, 149);
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     margin-left: 1.5rem;
 }
+
+.navlinks:hover {
+    animation: bigger 0.5s forwards !important;
+    text-decoration: none;
+    color: rgb(233, 191, 191);
+
+}
+
+.bgcolor {
+    background-color: #2f1e18;
+}
+
+@keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px) scale(0.95);
+      font-size: 3px;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+        font-size: 16px;
+    }
+  }
+
+@keyframes bigger {
+    0% {
+      font-size: 16px;
+    }
+    100% {
+      font-size: 19px;
+    }
+  }
 
 #nav-ul {
     list-style-type: none;
@@ -69,6 +106,8 @@ html::-webkit-scrollbar {
     justify-content: flex-start;
     align-items: center;
     margin: 0;
+    background: #2f1e18;
+    width: 100%;
 }
 
 
