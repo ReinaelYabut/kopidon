@@ -56,9 +56,18 @@ function updateActiveButton(newButton) {
 
 function filterEvents(filter) {
   menu.forEach((menu) => {
-    let eventCategory = menu.getAttribute("data-category");
+    let eventCategories = menu.getAttribute("data-category").split(' ');
+    let isBestseller = menu.getAttribute("data-bestseller") === 'true';
 
-    if (filter === "all" || filter === eventCategory) {
+    if (filter === "all") {
+      menu.removeAttribute("hidden");
+    } else if (filter === "bestseller") {
+      if (isBestseller) {
+        menu.removeAttribute("hidden");
+      } else {
+        menu.setAttribute("hidden", "");
+      }
+    } else if (eventCategories.includes(filter)) {
       menu.removeAttribute("hidden");
     } else {
       menu.setAttribute("hidden", "");
