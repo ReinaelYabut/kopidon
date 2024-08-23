@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw !important; /* Full viewport width */
+  font-family: "Poppins", sans-serif;
 
   background: rgb(240,230,214);
 background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 100%);
