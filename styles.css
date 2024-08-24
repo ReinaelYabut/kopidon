@@ -347,7 +347,7 @@ html::-webkit-scrollbar {
     max-width: 20rem;
     max-height: 28rem;
     margin: 0 auto;
-    background-color: #d3c7be;
+    background-color: #e9ddd4;
   }
 
   #coffee-container:hover {
@@ -430,13 +430,74 @@ html::-webkit-scrollbar {
 
 /* contact section */
 
-#contact {
-    background: #bcb2ab;
-    padding: 50px 0;
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-    /* Prevent horizontal scrollbar */
+@media (max-width: 600px) {
+  .border-form {
+    margin: .75rem !important;
+  }
+
+  input[type="text"], input[type="email"], #textarea {
+    max-width: 8rem;
+    border-radius: .5rem;
+    background-color: rgba(240,230,214,1);
+    
+  }
+
 }
+
+
+@media (max-width: 1024px) {
+  .border-form {
+    margin: .60rem !important;
+  }
+
+  input[type="text"], input[type="email"], #textarea {
+    max-width: 5rem;
+    border-radius: .5rem;
+    background-color: rgba(240,230,214,1);
+    
+  }
+}
+.contact-container {
+  background: rgb(240,230,214);
+  background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 100%);
+}
+
+input[type="text"], input[type="email"], #textarea {
+  max-width: 30rem;
+  border-radius: .5rem;
+  background-color: rgba(240,230,214,1);
+  
+}
+
+.input-group-prepend {
+  margin-right: 0.5rem;
+}
+
+.input-group-text {
+  
+  border-radius: 0.25rem;
+}
+
+.form-control {
+  border-left: none; /* Removes border on the left side to merge with the icon */
+}
+
+.border-form {
+  margin-top: 1.5rem;
+  margin-left: 4rem;
+}
+
+.submitbutton {
+  padding: .75rem;
+  border-radius: 1.5rem;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(69, 46, 19);
+  border: none;
+  margin-top: 1rem;
+  color: white;
+}
+
 
 .location-section {
     background-color: #22130f;
@@ -477,4 +538,13 @@ html::-webkit-scrollbar {
 .descrip {
   margin-bottom: 0;
   font-size: 14px;
+}
+
+
+.footercon {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column;
+
 }
