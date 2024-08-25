@@ -198,34 +198,79 @@ html::-webkit-scrollbar {
 
 /* home content */
 
+/* preview */
+#preview {
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #2f1e18;
+  /*background: url('Bg/coffeebeans.jpg');
+  background-size: cover;
+  /*filter: blur(1px) brightness(0.6); */
+  height: 75vh;
+}
 
-/* about */
+#preview h2 {
+  margin: 0 0 20px;
+  font-size: 3em;
+  color: #e9ddd4;
+}
 
-#about {
+.scrolling-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+
+
+.scrolling-content {
+  display: flex;
+  width: auto;
+  animation: scroll 12s linear infinite;
+}
+
+.scrolling-content img {
+  height: 550px;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+/* preview */
+
+
+/* homepage */
+
+#homepage {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background: #bcb2ab;
     font-family: 'Roboto', sans-serif;
 }
 
-#about .container {
+#homepage .container {
     padding-top: 50px;
 }
 
 .heading {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #22130f;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
 }
 
-.heading span {
-    font-size: 50px;
-    color: #22130f;
-}
-
-#about .card {
+#homepage .card {
     border: none;
     display: flex;
     justify-content: center;
@@ -233,13 +278,16 @@ html::-webkit-scrollbar {
     background: transparent;
 }
 
-#about .card img {
+#homepage .card img {
     border-radius: 10px;
-    width: 300px;
-    height: 400px;
+    width: 480px;
+    height: 600px;
+    padding-right: 90px;
+    padding-top: 20px;
 }
 
-#about-btn {
+/*
+#homepage-btn {
     width: 200px;
     height: 36px;
     background: transparent;
@@ -251,41 +299,41 @@ html::-webkit-scrollbar {
     cursor: pointer;
 }
 
-#about-btn:hover {
+#homepage-btn:hover {
     background: #22130f;
     color: white;
-}
+} */
 
-#about p {
-    font-size: 20px;
+#homepage p {
+    font-size: 25px;
     margin-top: 10px;
     color: #22130f;
 }
 
-#about h4 {
-    font-size: 30px;
+#homepage h4 {
+    font-size: 35px;
     margin-top: 10px;
     color: #22130f;
     font-weight: bold;
 }
 
 @media screen and (max-width:982px) {
-    #about p {
+    #homepage p {
         font-size: 8px;
     }
 }
 
 @media screen and (max-width:766px) {
-    #about p {
+    #homepage p {
         font-size: 15px;
     }
-    #about {
+    #homepage {
         height: 120vh;
     }
 }
 
 
-/* about */
+/* homepage */
 
 
 /* Menu Section */
