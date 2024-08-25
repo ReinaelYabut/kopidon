@@ -4,12 +4,34 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 600px) {
+  .swiper img {
+    width: 550px !important;
+    height:300px;
+    object-fit: cover;
+    object-position: calc(100% - 2rem) center;
+  }
+
+  .container {
+    max-height: 22.5rem !important;
+    overflow-x: hidden !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
 .container {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .swiper {
@@ -21,8 +43,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 72%;
+  width: 40rem;
+  margin-top: -2rem;
+  
 }
+
 
 .swiper .swiper-button-prev, .swiper .swiper-button-next, .swiper .swiper-slide  {
   color: #2f1e18;

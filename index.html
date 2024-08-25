@@ -36,6 +36,68 @@
 
 </head>
 
+    <style>
+/* review section */
+
+.subheadingreview {
+  display: block;
+  width: 40rem;
+  text-align: center;
+}
+
+.subheadingsec {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+        @media (max-width: 600px) {
+
+    .subheadingreview {
+    display: block;
+    width: 40rem;
+    text-align: center;
+    transform: scale(0.8);
+    margin: 0;
+    }
+
+    .swiper img {
+    width: 550px !important;
+    height:300px;
+    object-fit: cover;
+    object-position: calc(100% - 2rem) center;
+    }
+
+    #reviewcon {
+    max-height: 22.5rem !important;
+    overflow: hidden !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 1;
+    }
+
+    #review {
+        height: 30rem !important;
+    }
+    
+    }
+
+    @media (max-width: 1024px) {
+        #reviewcon {
+            height: 40rem !important;
+        }
+        
+    }
+
+
+    </style>
+
 <body>
     <div class="all-content">
         <!-- Navbar -->
@@ -174,11 +236,14 @@
             </div>
         </section>
         <!-- Menu section end -->
-
+        
         <!-- Start of Review Section-->
         <div id ="review" style="background-color:#BCB2AB"><br>
           <h1 style= "background: #BCB2AB; text-align: center; font: Tahoma, sans-serif;">Reviews</h1>
-          <iframe src="review.html"  style="border:none; width:100%; height:800px;"></iframe>
+          <div class="subheadingsec">
+            <h6 class="subheadingreview">Explore the rave reviews for Caffe Donn and see why visitors are calling it their new favorite spot for an unforgettable coffee experience!</h6>
+          </div>
+          <iframe id="reviewcon" src="review.html"  style="border:none; width:100%; height:90dvh; margin-bottom: .5rem;"></iframe>
         </div>
         <!-- End of Review Section-->
 
