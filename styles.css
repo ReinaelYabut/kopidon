@@ -37,19 +37,24 @@ html::-webkit-scrollbar {
 
 @media (max-width: 600px) {
     #caffedonnlogo {
-        transform: scale(0.8);
+        transform: scale(0.9) !important;
         margin-bottom: 0 !important;
     }
 
     #nav-ul {
         transform: scale(0.6);
         display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important;
+        grid-template-columns: repeat(6, 1fr) !important;
         margin-left: -4rem !important;
         padding: 0 !important;
         background: #2f1e18;
         width: 100vw; /* Full viewport width */
         height: 80px; /* Set height of navbar */
+    }
+
+    .navlinks {
+      transform: scale(0.6);
+      margin-left: 1.25rem !important;
     }
 }
 #caffedonnlogo {
