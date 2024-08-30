@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.poppins-about {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-left:10rem;
+    font-size: 4.5rem;
+    color: #cda270;
+    margin-top: 0;
+}
+
+.poppins-us {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    opacity: 1;
+    text-shadow: 3px 3px 14px rgba(0, 0, 0, 1);
+    padding: 0.5rem; 
+    margin: 0; 
+    margin-top: -1rem;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(to right, rgba(34, 19, 15, 0.9), rgba(34, 19, 15, 0.7)),
+                url('Bg/beansbg.jpg')!important;; 
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.owners-image {
+    max-height: 30rem; 
+    width: auto;
+    border-radius: 0%;
+    border: solid white;
+    border-width: 1rem 1rem 4rem 1rem;
+    object-fit: cover; 
+    margin-right: 2rem; 
+    margin-left: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    z-index: 1;
+}
+
+.content {
+    padding: 2rem;
+    color: white; 
+    box-sizing: border-box;
+    flex: 1; 
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .poppins-about {
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+    
+    .poppins-us {
+        font-size: 1rem;
+    }
+
+    .background-container {
+        flex-direction: column;
+    }
+
+    .owners-image {
+        max-height: 25rem;
+        margin: 2rem 1rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .poppins-about {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+    }
+    
+    .poppins-us {
+        font-size: 0.9rem;
+    }
+
+    .background-container {
+        height: auto;
+    }
+
+    .owners-image {
+        max-height: 20rem;
+        margin: 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+}
