@@ -63,6 +63,7 @@ body, html {
     flex: 1; 
     position: relative;
     z-index: 1;
+    animation: slide-left 1s ease-out both; 
 }
 
 @media (max-width: 1024px) {
@@ -86,6 +87,10 @@ body, html {
 
     .content {
         padding: 1.5rem;
+    }
+
+    .background-container {
+        height: 55rem;
     }
 }
 
@@ -112,3 +117,35 @@ body, html {
         padding: 1rem;
     }
 }
+
+@keyframes slide-card {
+    0% {
+      opacity: 0;
+      transform: translateY(5vh);
+    }
+    25% {
+      opacity: 0.3;
+      transform: translateY(2.5vh);
+    }
+    50% {
+      opacity: 0.6;
+      transform: translateY(0);
+    }
+    75% {
+      opacity: 0.9;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .poppins-us, .owners-image, .poppins-about {
+      view-timeline-name: --item-timeline;
+      animation: slide-card 1s ease-out both; 
+      animation-timeline: --item-timeline;
+      animation-range: contain 0% contain 50%;
+  }
+    }
