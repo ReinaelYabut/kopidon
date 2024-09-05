@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;  
-  background: #BCB2AB;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: transparent;
 }
 
 @media (max-width: 600px) {
@@ -62,3 +65,36 @@
   background: #2f1e18;
 
 }
+
+
+@keyframes slide-card {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  25% {
+    opacity: 0.3;
+    transform: translateY(7vh);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(6vh);
+  }
+  75% {
+    opacity: 0.9;
+    transform: translateY(4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .swiper-slide img{
+    view-timeline-name: --item-timeline;
+    animation: slide-card 1s ease-out both; 
+    animation-timeline: --item-timeline;
+    animation-range: contain 0% contain 50%;
+}
+  }

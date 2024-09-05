@@ -717,7 +717,7 @@ input[type="text"], input[type="email"], #textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .preview h2, #coffee-header, #coffee-container, #btn2, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
+  #hometitle, .preview h2, #coffee-header, #coffee-container, #btn2, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
     view-timeline-name: --item-timeline;
     animation: slide-card 1s ease-out both; 
     animation-timeline: --item-timeline;

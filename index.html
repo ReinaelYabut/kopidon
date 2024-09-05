@@ -40,6 +40,38 @@
     <style>
 /* review section */
 
+@keyframes slide-card {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  25% {
+    opacity: 0.3;
+    transform: translateY(7vh);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(6vh);
+  }
+  75% {
+    opacity: 0.9;
+    transform: translateY(4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .swiper img{
+    view-timeline-name: --item-timeline;
+    animation: slide-card 1s ease-out both; 
+    animation-timeline: --item-timeline;
+    animation-range: contain 0% contain 50%;
+}
+  }
+
 .subheadingreview {
   display: block;
   width: 40rem;
@@ -162,7 +194,9 @@
 
         <!-- Preview -->
         <section id="preview">
-            <h2 class="title">Home brews made better with <span style="color:#cda270;"> Caffè Donn</span></h2>
+            
+                <h2>Home brews made better with <span style="color:#cda270;"> Caffè Donn</span></h2>
+            
             <div class="scrolling-wrapper">
                 <div class="scrolling-content">
                     <img src="preview/First.png" alt="Drink 1">
@@ -184,15 +218,15 @@
         <!-- Homepage section -->
         <section id="homepage">
             <div class="container">
-                <div class="heading">Welcome to Caffè Donn!</div>
+                <div class="heading" id="hometitle">Welcome to Caffè Donn!</div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="Bg/homepage.png" alt="homepage">
+                            <img src="Bg/homepage.png" id="homepagepic" alt="homepage">
                         </div>
                     </div>
                     <div class="col-md-8">
-                <div class="heading" class="title">Welcome to Caffè Donn!</div>
+                <div class="heading" id="hometitle">Welcome to Caffè Donn!</div>
                         <h4 class="title">Where Quality Meets Affordability</h4>
                         <P class="title">At Caffè Donn, we're more than just a coffee shop—we're your cozy spot for top-notch coffee and good vibes. Enjoy the finest brews without breaking the bank, with prices from just 59 to 69 pesos.</P>
                         <h4 class="title">Cozy Atmosphere & Delicious Treats</h4>
@@ -261,12 +295,12 @@
         <!-- Menu section end -->
         
         <!-- Start of Review Section-->
-        <div id ="review" style="background-color:#BCB2AB"><br>
-          <h1 style= "background: #BCB2AB; text-align: center; font: Tahoma, sans-serif;">Reviews</h1>
+        <div id ="review" style="background-image: url(Bg/review-image.png)"><br>
+          <h1 class="title" style= "background-color: transparent;text-align: center; font: Tahoma, sans-serif;">Reviews</h1>
           <div class="subheadingsec">
             <h6 class="subheadingreview">Explore the rave reviews for Caffè Donn and see why visitors are calling it their new favorite spot for an unforgettable coffee experience!</h6>
           </div>
-          <iframe id="reviewcon" src="review.html"  style="border:none; width:100%; height:90dvh; margin-bottom: .5rem;"></iframe>
+          <iframe id="reviewcon" src="review.html"  style="background-color: transparent;border:none; width:100%; height:90dvh; margin-bottom: .5rem;"></iframe>
         </div>
         <!-- End of Review Section-->
 
