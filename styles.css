@@ -642,11 +642,21 @@ box-shadow:
     margin: .75rem !important;
   }
 
-  input[type="text"], input[type="email"], #textarea {
-    max-width: 8rem;
+  .contact {
+    margin-left: 2rem !important;
+    margin-top: 2rem !important;
+  }
+
+  #name, #email, #message {
+    min-width: 21rem !important;
     border-radius: .5rem;
     background-color: rgba(240,230,214,1);
     
+  }
+
+  #submitbutton {
+    transform: scale(0.9);
+    margin-bottom: 1rem;
   }
 
 }
@@ -657,20 +667,29 @@ box-shadow:
     margin: .60rem !important;
   }
 
-  input[type="text"], input[type="email"], #textarea {
-    max-width: 5rem;
+  .contact {
+    margin-left: 2rem !important;
+    margin-top: 2rem !important;
+  }
+
+  #name, #email, #message {
     border-radius: .5rem;
+    width: 19rem !important;
     background-color: rgba(240,230,214,1);
     
   }
 }
-.contact-container {
+.contact {
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+#contact {
   background: rgb(240,230,214);
   background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 100%);
 }
 
-input[type="text"], input[type="email"], #textarea {
-  max-width: 30rem;
+#name, #email, #message {
+  max-width: 35rem;
   border-radius: .5rem;
   background-color: rgba(240,230,214,1);
   
@@ -694,7 +713,7 @@ input[type="text"], input[type="email"], #textarea {
   margin-left: 4rem;
 }
 
-.submitbutton {
+#submitbutton {
   padding: .75rem;
   border-radius: 1.5rem;
   width: 150px;
@@ -782,7 +801,7 @@ input[type="text"], input[type="email"], #textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-   #hometitle, .preview h2, #coffee-header, #coffee-container, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
+   #name, #email, #message, #hometitle, .preview h2, #coffee-header, #coffee-container, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
     view-timeline-name: --item-timeline;
     animation: slide-card 1s ease-out both; 
     animation-timeline: --item-timeline;

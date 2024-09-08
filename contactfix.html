@@ -1,0 +1,165 @@
+
+<!-- mika styles contact
+
+        <script src="contact.js"></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init("iauDBcNZna2qqRfo5");
+          })();
+        </script>
+      </head>
+      <body>
+        <div id="contact">
+            <div class="contact-container">
+                <div class="row">
+                
+                  <div class="col-md-6 p-5 text-white" style="background-color: #2b2b2c">
+                    <h1 class="title">Location</h1>
+                    <h4 class="title">Road 1, Northville 15, Cutud, Angeles City.</h4>
+          
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15402.798178038347!2d120.6288319!3d15.1748365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396eff720aac825%3A0x704de73c49ad0546!2sCaff%C3%A8%20donn!5e0!3m2!1sen!2sph!4v1723717980295!5m2!1sen!2sph"
+                      width="100%"
+                      height="300"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      id="map"
+                    ></iframe>
+                  </div>
+            
+                  <div class="col-md-6 border-left py-3">
+                    <div class="border-form">
+                        <h1 class="title">Contact form</h1>
+                    <div class="form-group">
+                        <h5 for="name">Name</h5>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Enter name"
+                          />
+                        </div>
+                      </div>
+                    <div class="form-group">
+                      <h5 for="email">Email</h5>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                          </div>
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                      />
+                      </div>
+                     
+                    </div>
+                    <div class="form-group">
+                      <h5 for="message">Message</h5>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-comment icon"></i></span>
+                          </div>
+                        <textarea id="textarea" class="form-control" rows="3" placeholder="Enter your message"></textarea>
+                      </div>
+                      
+                    </div>
+                  <button class="btn btn-secondary" onclick="goBack()">Go Back</button>
+                    <button class="submitbutton" onclick="sendMail()">Submit</button>
+                  </div>
+                </div>
+              </div>   
+                    </div>
+                    
+        </div> --> 
+
+
+        
+        <!-- Contact section -->
+        <script src="contact.js"></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init("iauDBcNZna2qqRfo5");
+          })();
+        </script>
+      </head>
+      <body>
+        <div class="container border mt-3 bg-light">
+          <div class="row">
+            <!-- Location Section -->
+            <div class="col-md-6 p-5 text-white" style="background-color: #2b2b2c">
+              <h1>Location</h1>
+              <h4>Road 1, Northville 15, Cutud, Angeles City.</h4>
+              <!-- Google Maps iframe -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15402.798178038347!2d120.6288319!3d15.1748365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396eff720aac825%3A0x704de73c49ad0546!2sCaff%C3%A8%20donn!5e0!3m2!1sen!2sph!4v1723717980295!5m2!1sen!2sph"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+    
+            <!-- Contact Form Section -->
+            <div class="contact">
+              <h1>Contact form</h1>
+              <div class="form-group">
+                <h5 for="name"><i class="fa fa-user"></i> Name</h5>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter name"
+                />
+              </div>
+              <div class="form-group">
+                <h5 for="email"><i class="fa fa-envelope"></i> Email</h5>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <h5 for="message"><i class="fa fa-comments"></i> Message</h5>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Enter Message"
+                ></textarea>
+              </div>
+              <div class="contact button"> <button class="btn btn-primary" onclick="sendMail()">Submit</button></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact end -->
+
+
+
+
+
+
+
+
+
+
