@@ -782,13 +782,22 @@ input[type="text"], input[type="email"], #textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #container-home, #hometitle, .preview h2, #coffee-header, #coffee-container, #btn2, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
+   #hometitle, .preview h2, #coffee-header, #coffee-container, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
     view-timeline-name: --item-timeline;
     animation: slide-card 1s ease-out both; 
     animation-timeline: --item-timeline;
     animation-range: contain 0% contain 20%;
 }
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    #container-home, .homeanimation {
+      view-timeline-name: --item-timeline;
+      animation: slide-card 1s ease-out both; 
+      animation-timeline: --item-timeline;
+      animation-range: contain 0% contain 10%;
+  }
+    }
 
 
 
