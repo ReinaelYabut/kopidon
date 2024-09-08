@@ -275,7 +275,7 @@ html::-webkit-scrollbar {
   /*background: url('Bg/coffeebeans.jpg');
   background-size: cover;
   /*filter: blur(1px) brightness(0.6); */
-  height: 75vh;
+  height: 100dvh;
 }
 
 #preview h2 {
@@ -296,12 +296,12 @@ html::-webkit-scrollbar {
 .scrolling-content {
   display: flex;
   width: 200%;
-  animation: scroll 20s linear infinite;
+  animation: scroll 25s linear infinite;
 }
 
 .scrolling-content img {
-  height: 550px;
-  margin-right: 10px;
+  height: 35rem;
+  margin-right: 5rem;
 }
 
 @media (max-width: 1024px) {
@@ -310,13 +310,18 @@ html::-webkit-scrollbar {
   }
 
   .scrolling-content img {
-    height: 40vh;
+    height: 30vh;
+    margin-right: 2rem;
+  }
+
+  #preview {
+    height: 47vh;
   }
 }
 
 @media (max-width: 600px) {
   #preview {
-    height: 55vh;
+    height: 55vh ;
   }
   #preview h2 {
     font-size: 2rem;
@@ -324,6 +329,10 @@ html::-webkit-scrollbar {
 
   .scrolling-content img {
     height: 30vh;
+  }
+
+  .scrolling-content {
+    animation: scroll 20s linear infinite;
   }
 }
 
@@ -353,9 +362,22 @@ html::-webkit-scrollbar {
 
 #homepage {
     width: 100%;
-    height: 80vh;
-    background: linear-gradient(to bottom, #bcb2ab, #8a7f72);
-    font-family: 'Roboto', sans-serif;
+    height: 105dvh;
+    background: linear-gradient(180deg, rgba(240,230,214,1) 0%, rgba(194,165,129,1) 100%);
+    font-family: 'Poppins';
+}
+
+#container-home {
+  border-radius: 2rem;
+  width: 100%;
+  height: 10.75rem;
+  padding:1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 49px;
+background: #6a5334;
+box-shadow:  
+             6px 6px 7px #4a3b25;
 }
 
 #homepage .container {
@@ -384,51 +406,93 @@ html::-webkit-scrollbar {
     height: 600px;
     padding-right: 80px;
     padding-top: 20px;
+    transform: scale(1);
+      margin-left: 0;
 }
 
 #homepage p {
-    font-size: 25px;
-    margin-top: 10px;
-    color: #22130f;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #d4bcb4;
 }
 
 #homepage h4 {
-    font-size: 35px;
-    margin-top: 10px;
-    color: #22130f;
+    font-size: 2rem;
+    color: #efd1a2;
     font-weight: bold;
 }
 
 @media (max-width:1024px) {
     #homepage p {
-        font-size: 8px;
+        font-size: .80rem;
+    }
+
+    #homepage {
+      max-width: 100%;
+      min-height: 60vh; /* Ensures it’s always at least 150vh */
+  height: auto;
+}
+    #homepage .card img {
+      transform: scale(0.6);
+      margin-left: 5rem;
+    }
+
+    #container-home {
+      margin-right: 5rem;
+      border-radius: 2rem;
+      width: 100%;
+      height: 13rem;
+      padding:1rem;
+      margin-bottom: 1.5rem;
+      margin-top: 0.5rem;
+      border-radius: 49px;
+    background: #6a5334;
+    box-shadow:  
+                6px 6px 7px #4a3b25;
+    transform: scale(0.9);
     }
 }
 
 @media (max-width:600px) {
+  #container-home {
+    border-radius: 2rem;
+    width: 100%;
+    height: 13rem;
+    padding:1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 49px;
+  background: #6a5334;
+  box-shadow:  
+               6px 6px 7px #4a3b25;
+  transform: scale(0.9);
+  }
+
     .heading {
       font-size: 2rem;
     }
     #homepage p {
-        font-size: 1rem;
+        font-size: .90rem;
     }
     #homepage {
         max-width: 100%;
-        height: 130vh;
+        min-height: 140vh; /* Ensures it’s always at least 150vh */
+    height: auto;
     }
     #homepage .card img {
       border-radius: 5px;
-      width: 480px;
-      height: 400px;
-      padding-top: 10px;
-      padding-left: 90px;
+      width: 480px !important;
+      height: 400px !important;
+      padding-top: 10px !important;
+      padding-left: 90px !important;
+      transform: scale(1);
+      margin-left: 0;
     }
 
     #homepage h4 {
       font-size: 1.8rem;
-      margin-top: 20px;
-      color: #22130f;
-      font-weight: bold;
+      color: #efd1a2;
+    font-weight: bold;
       text-align: center;
   }
 
@@ -697,19 +761,19 @@ input[type="text"], input[type="email"], #textarea {
 @keyframes slide-card {
   0% {
     opacity: 0;
-    transform: translateY(10vh);
+    transform: translateY(4vh);
   }
   25% {
     opacity: 0.3;
-    transform: translateY(7vh);
+    transform: translateY(3vh);
   }
   50% {
     opacity: 0.6;
-    transform: translateY(6vh);
+    transform: translateY(2vh);
   }
   75% {
     opacity: 0.9;
-    transform: translateY(4vh);
+    transform: translateY(1vh);
   }
   100% {
     opacity: 1;
@@ -718,11 +782,11 @@ input[type="text"], input[type="email"], #textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #hometitle, .preview h2, #coffee-header, #coffee-container, #btn2, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
+  #container-home, #hometitle, .preview h2, #coffee-header, #coffee-container, #btn2, .subheadingsec, .content, .title, .form-group, #map, .submitbutton{
     view-timeline-name: --item-timeline;
     animation: slide-card 1s ease-out both; 
     animation-timeline: --item-timeline;
-    animation-range: contain 0% contain 50%;
+    animation-range: contain 0% contain 20%;
 }
   }
 
